@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+header {
+    background-color: #1F2936;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #3581F4;
+}
+
+.header-seperator {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #354354;
+    margin-top: 2%;
+}
+
+footer {
+    background-color: #1F2936;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------ Start of index file styling ------------  */
+.first-section {
+    background-color: #1F2936;
+    color: white;
+    display: grid;
+    grid-template-columns: 400px 500px;
+    grid-template-rows: 250px;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.first-section p {
+    margin-top: 0px;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+    column-gap: 30px;
+    margin: 20px;
+    position: relative;
+}
+
+.second-section h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: -40px;
+}
+
+.second-section p {
+  line-height: 1.5;
+}
+
+.blue-box {
+    border: 4px solid #3581F4;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.third-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E5EB;
+    flex-direction: column;
+}
+
+.third-section p {
+    text-align:justify;
+    font-size: 32px;
+    max-width: 800px;
+    margin-bottom: 0px;
+
+}
+
+#quote {
+    color: #252e39;
+    text-shadow: -2px 2px 10px grey;
+}
+
+#author {
+    width: 100%;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.fourth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-wrap {
+    background-color: #3782F5;
+    border-radius: 10px;
+    height: 150px;
+    width: 60%;
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+
+.placeholder {
+    background-color: #6D737D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-section-button {
+    background-color: #3782F5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+
+#second-section-button {
+    background-color: #3782F5;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+/* ------------ End of index file styling ------------ */
+
+/* ------------ Start of Dynamic Loading styling ------------ */
+
+.container {
+    width: 600px;
+    border: 2px solid #000;
+    margin: auto;
+    float: none;
+}
+
+/* ------------ End of Dynamic Loading styling ------------ */
+
+/* ------------ Start of Real-time Data styling ------------ */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+#counter {
+    text-align: center;
+    color: rgb(4, 32, 155);
+}
+
+/* ------------ End of Real-time Data styling ------------ */
