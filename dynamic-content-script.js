@@ -11,7 +11,7 @@ function fetchPosts() { // Used to initially fetch and fill posts array
     })
     .then((postData) => {
         posts = postData; // Fills the post array with the fetched data
-        loadPosts();
+        loadPosts(); // Initially load 9 posts
     })
 }
 
@@ -20,8 +20,7 @@ function loadPosts() {
 
     let i = 1, limit = 9;
     for (post of posts) {
-        if (i <= limit) {
-            console.log(posts);
+        if (i <= limit) { // If not 9 has been added yet
             const article = document.createElement("article");
             const title = document.createElement("h1");
             title.textContent = post.title;
@@ -31,11 +30,11 @@ function loadPosts() {
             article.appendChild(body);
             article.setAttribute("class", "post-styling");
             container.appendChild(article);
-            posts.shift();
+            posts.shift(); // Remove the used post
             i++;
         }
     }
-    loading = false;
+    loading = false; // Done loading new posts, a new one can start
 }
 
 // Fetches and initializes the posts array
