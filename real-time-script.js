@@ -1,7 +1,3 @@
-/**
- * ------------ Start Real-time Data ------------
- */
-
 function fetchWeather(url, id) { // id is the element to update
     //const weatherData = 
     fetch(url).then((response) => {
@@ -27,7 +23,7 @@ function fetchWeather(url, id) { // id is the element to update
 }
 
 window.onload = function() { // Runs the code when the window is loaded
-    let i = 1; // Counter for amount of times reloaded
+    let i = 1; // Counter for amount of times updated
 
     // Fetches and updates weather data for the different locations
     fetchWeather('https://api.open-meteo.com/v1/forecast?latitude=40.71455&longitude=-74.00235&current_weather=true', 'newyork-data');
@@ -48,6 +44,3 @@ window.onload = function() { // Runs the code when the window is loaded
         console.log(`Updated! Total times updated: ${i++}`);
     }, 10000); // Updates weather data every 10 seconds
 }
-/**
- * ------------ End Real-time Data ------------
- */
