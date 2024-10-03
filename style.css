@@ -67,7 +67,6 @@ footer {
     row-gap: 70px;
     column-gap: 30px;
     margin: 20px;
-    position: relative;
 }
 
 .second-section h2 {
@@ -152,7 +151,7 @@ footer {
     cursor: pointer;
 }
 
-#second-section-button {
+#fourth-section-button {
     background-color: #3782F5;
     color: white;
     border: 2px solid white;
